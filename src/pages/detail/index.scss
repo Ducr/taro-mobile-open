@@ -1,0 +1,30 @@
+.detail-page {
+  height: 100%;
+  background-color: #f2f3f5;
+  .detail-container {
+    margin: 0 20px;
+    background-color: #fff;
+
+    .taroify-cell {
+      .taroify-cell__title {
+        flex: 0 0 150px;
+        text-align: right;
+      }
+
+      .taroify-cell__value {
+        text-align: left;
+      }
+    }
+
+    .btn-wrapper {
+      padding: 10px 20px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+}
+
+page {
+  background-color: #f2f3f5;
+}

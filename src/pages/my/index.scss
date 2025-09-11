@@ -1,0 +1,33 @@
+.my-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .taroify-navbar {
+    width: 100%;
+  }
+
+  .userinfo-container {
+    width: 100%;
+
+    .taroify-cell {
+      width: 100%;
+
+      .taroify-cell__value {
+        text-align: center;
+      }
+    }
+
+    .btn-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+page {
+  height: 100%;
+}

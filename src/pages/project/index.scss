@@ -1,0 +1,38 @@
+.project-page {
+  min-height: 100%;
+  padding: 20px;
+  background-color: #f2f3f5;
+
+  .taroify-flex-item {
+    width: 100%;
+    box-sizing: border-box;
+    flex: auto;
+  }
+
+  .project-item {
+    width: 100%;
+    background-color: #fff;
+
+    .taroify-cell {
+      .taroify-cell__title {
+        flex: 0 0 150px;
+        text-align: right;
+      }
+
+      .taroify-cell__value {
+        text-align: left;
+      }
+    }
+
+    .btn-wrapper {
+      padding: 10px 20px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+}
+
+page {
+  background-color: #f2f3f5;
+}
