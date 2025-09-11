@@ -1,0 +1,15 @@
+{
+  "miniprogramRoot": "./dist/weapp",
+  "projectname": "taro-mobile-open",
+  "description": "一个使用Taro搭建的weapp和H5两端的移动开标项目",
+  "appid": "wxbb7742cf73715acb",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "enhance": false,
+    "compileHotReLoad": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}
