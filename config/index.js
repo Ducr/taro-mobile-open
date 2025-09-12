@@ -20,6 +20,7 @@ export default defineConfig(async (merge, { command, mode }) => {
     plugins: [
       "@tarojs/plugin-generator"
     ],
+    env: {}, // 默认需定义env，即使是空对象，否则报错process is not defined。优先级.env.[mode] > 该配置
     defineConstants: {
     },
     copy: {
