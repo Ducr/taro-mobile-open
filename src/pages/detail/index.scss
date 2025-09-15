@@ -21,6 +21,9 @@
       display: flex;
       justify-content: flex-end;
       align-items: center;
+      .taroify-button ~ .taroify-button {
+        margin-left: 12px;
+      }
     }
   }
 }

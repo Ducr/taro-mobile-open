@@ -1,5 +1,5 @@
 .project-page {
-  min-height: 100%;
+  min-height: calc(100% - 52px);
   padding: 20px;
   background-color: #f2f3f5;
 
@@ -29,6 +29,17 @@
       display: flex;
       justify-content: flex-end;
       align-items: center;
+      .taroify-button ~ .taroify-button {
+        margin-left: 12px;
+      }
+    }
+  }
+  .taroify-popup {
+    .btn-wrapper {
+      padding: 10px;;
+      .taroify-button {
+        width: 100%;
+      }
     }
   }
 }

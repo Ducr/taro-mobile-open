@@ -4,8 +4,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  .taroify-navbar {
+  .taroify-tabs {
     width: 100%;
+    .taroify-tabs__wrap {
+      margin: 0 56px 40px 56px;
+    }
+  }
+  .btn-wrapper {
+    margin: 40px 56px 0 56px;
+    .taroify-button:last-child {
+      margin-top: 32px;
+    }
   }
 }
 

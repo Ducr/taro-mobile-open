@@ -8,18 +8,17 @@ import CTabBar from "../../components/CTabBar";
 export default function My() {
   useLoad(() => {});
 
-  const [isLogin, setIsLogin] = useState(false);
-  const [userInfo, setuserInfo] = useState(false);
+  const userInfo = Taro.getStorageSync("userInfo")
+  const [isLogin, setIsLogin] = useState(() => !!userInfo.token);
   const goToLogin = () => {
-    setIsLogin(true);
-    setuserInfo({ userName: "投标单位" });
-    // Taro.navigateTo({
-    //   url: "/pages/login/index",
-    // });
+    Taro.reLaunch({
+      url: "/pages/login/index",
+    });
   };
   const doLogout = () => {
     setIsLogin(false);
-    setuserInfo({});
+    Taro.clearStorageSync("userInfo");
+    Taro.clearStorageSync("token");
   };
   const onChangeTabItem = (value) => {
     if (value === 0) {
@@ -35,7 +34,7 @@ export default function My() {
       {isLogin
         ? (
           <View className="userinfo-container">
-            <Cell bordered={false}>{userInfo.userName}</Cell>
+            <Cell bordered={false}>{userInfo.username}</Cell>
             <View className="btn-wrapper">
               <Button color="primary" size="small" onClick={doLogout}>
                 退出登录
